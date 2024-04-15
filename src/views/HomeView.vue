@@ -1,12 +1,13 @@
 <template>
 
   <div>
-    <h2>Home Page</h2>
+    
 
-
-    <ul>
-      <p>nome</p>
-    </ul>
+    <header>nave</header>
+   <div class="body-main">
+    <aside>section</aside>
+    <main>Main</main>
+   </div>
 
   </div>
 
@@ -32,12 +33,14 @@ export default defineComponent({
 axios.get('https://api-manager-test.infog2.com.br.infog2.com.br/a/colaborador/?text=', {
     headers: {
       'Content-type': 'application/json',
-      'Authorization':'Token 8d23698c5b30fe6515331ef1ef40e7a903169829'
+      'Authorization': `Token ${localStorage.getItem('token')}`
     
     }
 })
 .then(response => {
     console.log(response);
+
+  
     // localStorage.setItem('token', response.data.token,);
     // router.push('/');
 
@@ -64,8 +67,33 @@ axios.get('https://api-manager-test.infog2.com.br.infog2.com.br/a/colaborador/?t
 
 
 
-
-
 </script>
 
-<style></style>
+
+<style scoped>
+
+
+header{ background: #0077FF;
+
+height: 50px;
+
+}
+aside{
+background: #007AD6;
+display: flex;
+flex: 50px 100%;
+height: calc(100vh - 50px);
+}
+
+.body-main{
+
+  display: flex;
+  
+}
+main{
+  display: flex;
+  /* width: 100%; */
+  flex: 1;
+  background: #c54f0a;}
+
+</style>
