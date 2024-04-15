@@ -5,12 +5,20 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
+    beforeEnter: (to, from, next)=>{
+      if(localStorage.getItem('token') != undefined){
+        next();
+      }else{
+        next('/login');
+      }
+    }
   },
   {
     path: '/login',
     name: 'login',
     component: LoginView
+    
   },
  
 ]
