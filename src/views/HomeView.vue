@@ -16,29 +16,46 @@
 </template>
 
 <script lang="ts">
-import router from '@/router';
+
 import axios from 'axios';
+import { defineComponent, onMounted } from 'vue';
+
+export default defineComponent({
+  setup() {
+    
+    onMounted(() => {
+   
+
+    
 
 
-
-
-const getUsuario = () => {
-
-
-axios.post('https://api-manager-test.infog2.com.br.infog2.com.br/a/auth/login_colaborador/', {
-    headers: {'Content-type': 'application/json'}
+axios.get('https://api-manager-test.infog2.com.br.infog2.com.br/a/colaborador/?text=', {
+    headers: {
+      'Content-type': 'application/json',
+      'Authorization':'Token 8d23698c5b30fe6515331ef1ef40e7a903169829'
+    
+    }
 })
 .then(response => {
     console.log(response);
-   // localStorage.setItem('token', response.data.token,);
-    //router.push('/');
+    // localStorage.setItem('token', response.data.token,);
+    // router.push('/');
 
     
 })
 .catch(error => {
     console.log(error);
 });
-}
+
+
+    });
+  }
+});
+
+
+
+
+
 
 
 
