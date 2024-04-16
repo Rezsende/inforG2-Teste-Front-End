@@ -1,22 +1,17 @@
 <template>
-
-  
-
+    <div>
       <NavbarComponente/>
   
       <CorpoComponente>
         <MenuComponente/>
         <main>
-          Home
+          Utilitarios
         </main>
       </CorpoComponente>
-
-
-    
-
-</template>
-
-<script lang="ts">
+    </div>
+  </template>
+  
+  <script lang="ts">
   import NavbarComponente from '@/components/NavbarComponente.vue';
   import MenuComponente from '@/components/MenuComponente.vue'; 
   import CorpoComponente from '@/components/CorpoComponente.vue';
@@ -29,22 +24,13 @@
     }
   }
   </script>
-
-
-<style scoped>
-
-
-
-
-
-
-main {
-  display: flex;
-  flex: 1;
-  background: #c43636;
-  overflow: auto;
-}
-
-
-
-</style>
+  
+  <style scoped>
+  main {
+    display: flex;
+    flex: 1;
+    background: #ffffff;
+    overflow: auto;
+  }
+  </style>
+  
