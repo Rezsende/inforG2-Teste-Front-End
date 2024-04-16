@@ -6,7 +6,7 @@
     <header>
 
       <div class="buton-toggle">
-        <img class="img-togle" src="../assets/togle.png"/>
+        <img class="img-togle" src="../assets/menu-burgue.png"/>
       </div>
       
       <div class="route-menu">
@@ -22,7 +22,17 @@
    <div class="body-main">
     <aside>
     
-    <div class="menu-top">menu</div>
+    <div class="menu-top">
+        <ul class="menu-top-ul">
+          <li class="menu-top-li"><img  src="../assets/Vector.png"/></li>
+          <li><img  src="../assets/people.png"/></li>
+          <li><img  src="../assets/Group.png"/></li>
+          <li><img  src="../assets/toy.png"/></li>
+          <li><img  src="../assets/book.png"/></li>
+          <li><img  src="../assets/tools.png"/></li>
+        </ul>
+    </div>
+    
     <div class="menu-logo"><img class="menu-logo-style" src="../assets/logo.png"/></div>
     
     </aside>
@@ -80,6 +90,24 @@ axios.get('https://api-manager-test.infog2.com.br.infog2.com.br/a/colaborador/?t
 
 
 <style scoped>
+
+.menu-top-ul{
+
+  width: 100%;
+  margin: 30px 0 0 0;
+  padding: 0;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  gap: 35px;
+    list-style-type: none;
+
+
+  
+}
+
 header{ background: #0077FF;
 height: 50px;
 display: flex;
@@ -97,7 +125,7 @@ height: calc(100vh - 50px);
 .menu-top{
   display: flex;
   flex: 2;
-  background: #11f011;
+ 
 }
 .menu-logo{
   display: flex;
@@ -139,7 +167,7 @@ display: flex;
 
 .img-togle{
 margin-left: 10px;  
-height: 30px;
+height: 25px;
 }
 
 .Manger{
