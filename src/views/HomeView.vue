@@ -20,7 +20,12 @@
 
     </header>
    <div class="body-main">
-    <aside>section</aside>
+    <aside>
+    
+    <div class="menu-top">menu</div>
+    <div class="menu-logo"><img class="menu-logo-style" src="../assets/logo.png"/></div>
+    
+    </aside>
     <main>Main</main>
    </div>
 
@@ -82,12 +87,30 @@ flex: 1;
 
 }
 aside{
-background: #007AD6;
+background: #0091FF;
 display: flex;
+flex-direction: column;
 flex: 50px 100%;
 height: calc(100vh - 50px);
 }
 
+.menu-top{
+  display: flex;
+  flex: 2;
+  background: #11f011;
+}
+.menu-logo{
+  display: flex;
+  flex: 1;
+   align-items: end;
+   padding-bottom: 10px;
+
+}
+.menu-logo-style{
+  height: 38px;
+  padding: 4px;
+  
+}
 .body-main{
 display: flex;
 }
