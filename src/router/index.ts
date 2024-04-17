@@ -28,7 +28,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/users',
-    name: 'users',
+    name: 'Utilitários / Usuários',
      component: UsersView
     
   },
@@ -54,7 +54,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path:'/UltilitariosView',
-    name:'Ultilitarios',
+    name:'Utilitários',
     component: UltilitariosView
   }
  

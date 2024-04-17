@@ -5,7 +5,7 @@
       <CorpoComponente>
         <MenuComponente/>
         <main>
-          Utilitarios
+         Usuarios
         </main>
       </CorpoComponente>
     </div>
