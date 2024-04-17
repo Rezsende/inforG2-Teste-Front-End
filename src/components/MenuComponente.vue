@@ -10,7 +10,7 @@
     <router-link to="/Pagina_ThreeView"><img src="../assets/toy.png" /></router-link>
     <router-link to="/Pagina_fourView"><img src="../assets/book.png" /></router-link>
     <router-link to="/UltilitariosView"><img src="../assets/tools.png" /></router-link>
-
+  
    
   </ul>
 </div>
@@ -64,6 +64,14 @@ list-style-type: none;
 
 }
 
-
+&:hover, .router-link-exact-active
+{
+  display: flex;
+  background-color: #007AD6;
+  align-items: center;
+  justify-content: center;
+ border-radius: 50PX;
+  padding: 8px;
+}
 
 </style>
