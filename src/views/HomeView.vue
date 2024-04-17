@@ -4,7 +4,7 @@
     <CorpoComponente>
       <MenuComponente />
       <MainComponente>
-        <CardComponente/>
+       <h2>Home</h2>
       </MainComponente>
     </CorpoComponente>
   </div>
@@ -15,7 +15,7 @@ import NavbarComponente from '@/components/NavbarComponente.vue';
 import MenuComponente from '@/components/MenuComponente.vue';
 import CorpoComponente from '@/components/CorpoComponente.vue';
 import MainComponente from '@/components/MainComponente.vue';
-import CardComponente from '@/components/CardComponente.vue';
+
 import { defineComponent } from 'vue';
 
 
@@ -26,7 +26,7 @@ export default defineComponent({
     CorpoComponente,
     MainComponente,
     MenuComponente,
-    CardComponente
+   
     
   }
 });

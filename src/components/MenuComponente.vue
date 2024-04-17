@@ -3,12 +3,13 @@
 
 <div class="menu-top">
   <ul class="menu-top-ul">
-    <li class="menu-top-li"><img src="../assets/Vector.png" /></li>
-    <li><img src="../assets/people.png" /></li>
-    <li><img src="../assets/Group.png" /></li>
-    <li><img src="../assets/toy.png" /></li>
-    <li><img src="../assets/book.png" /></li>
-    <router-link to="/"><img src="../assets/tools.png" /></router-link>
+  
+    <router-link to="/"><img src="../assets/Vector.png" /></router-link>
+    <router-link to="/Pagina_oneView"><img src="../assets/people.png" /></router-link>
+    <router-link to="/Pagina_TwoView"><img src="../assets/Group.png" /></router-link>
+    <router-link to="/Pagina_ThreeView"><img src="../assets/toy.png" /></router-link>
+    <router-link to="/Pagina_fourView"><img src="../assets/book.png" /></router-link>
+    <router-link to="/UltilitariosView"><img src="../assets/tools.png" /></router-link>
 
 
   </ul>
