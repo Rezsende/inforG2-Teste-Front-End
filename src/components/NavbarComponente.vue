@@ -7,7 +7,8 @@
 
 <div class="route-menu">
   <div>
-    <span class="settings-label">Utilitarios</span>
+ 
+    <span class="settings-label" >{{ nomeItem }}</span>
   </div>
   <div>
     <span class="Manger">Manager</span>
@@ -16,6 +17,22 @@
 
 </header>
 </template>
+
+<script>
+import { useRouter } from 'vue-router';
+
+export default {
+  setup() {
+    const router = useRouter();
+    const currentRoute = router.currentRoute.value;
+    const nomeItem = currentRoute.name;
+    return {
+      nomeItem
+    };
+  }
+}
+</script>
+
 
 
 
@@ -49,7 +66,7 @@ header {
 
 }
 .settings-label {
-  margin-left: 50%;
+  /* margin-left: 50%; */
   font-size: 20px;
   color: #ffffff;
 }

@@ -10,7 +10,7 @@ import Pagina_fourView from '../views/Pagina_fourView.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: HomeView,
     beforeEnter: (to, from, next)=>{
       if(localStorage.getItem('token') != undefined){
@@ -34,27 +34,27 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path:'/Pagina_oneView',
-    name: 'Pagina_oneView',
+    name: 'Pagina 1',
     component: Pagina_oneView
   },
   {
     path:'/Pagina_TwoView',
-    name: 'Pagina_TwoView',
+    name: 'Pagina 2',
     component: Pagina_TwoView
   },
   {
     path:'/Pagina_ThreeView',
-    name: 'Pagina_ThreeView',
+    name: 'Pagina 3',
     component: Pagina_ThreeView
   },
   {
     path:'/Pagina_fourView',
-    name: 'Pagina_fourView',
+    name: 'Pagina 4',
     component: Pagina_fourView
   },
   {
     path:'/UltilitariosView',
-    name:'UltilitariosView',
+    name:'Ultilitarios',
     component: UltilitariosView
   }
  
