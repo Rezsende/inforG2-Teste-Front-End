@@ -18,12 +18,12 @@
           <div v-for="(user, index) in userList" :key="index" class="list-user-api">
 
             <div class="name-perfil">
-              <span> {{ user.nome }}</span>
-              <span> {{ user.perfil_str }}</span>
+              <span class="name-perfil-span"> {{ user.nome }}</span>
+              <span class="name-perfil-span"> {{ user.perfil_str }}</span>
             </div>
             
             <div class="status">
-              {{ user.status }}
+             <span class="span-status"> {{ user.status }} </span>
             </div>
 
             <div class="cnpj">
@@ -86,51 +86,75 @@ export default defineComponent({
 </script>
 
 <style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@900&display=swap');
+
+* {
+   
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700px;
+}
+
 .box-list-user {
 
   width: 97%;
   margin-top: 28px;
   margin-left: 10px;
   height: 90vh;
-   /* overflow-x: hidden;
-  overflow-y: auto; 
-  overflow: none;
-  white-space: nowrap; */
+   overflow-x: hidden;
+ 
+  white-space: nowrap; 
 }
 
 .list-user-api {
   display: flex;
   margin-top: 10px;
-  height: 79px;
+  height: 80px;
   align-items: center;
   border: 1px solid rgb(19, 19, 18);
 
   
 }
 
-
+.name-perfil-span{
+  margin-left: 30px;
+  color: #302F2F;
+ 
+}
 .name-perfil {
 
   display: flex;
-  flex: 1;
-  
+  flex: 2;
+  flex-direction: column;
+  font-size: 14px;
  
-  background: red;
 }
 .status{
   display: flex;
-  flex: 1;
-  background: rgb(7, 91, 218);
+  flex:1;
+  justify-content: center;
+  font-size: 14px;
+
+ 
+  
+
+}
+.span-status{
+  color: #038868;
+  background-color: #AEF5E4;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .cnpj{
   display: flex;
-  flex: 1;
+  flex: 3;
   background: rgb(91, 192, 8);
 }
 .andress{
   display: flex;
-  flex: 1;
+  flex: 3;
+  
   background: rgb(55, 6, 230);
 }
 </style>
