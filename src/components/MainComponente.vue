@@ -9,10 +9,12 @@
 
 
 main {
+
   display: flex;
   flex: 1;
   background: #fdfdfd;
   overflow: auto;
+ 
 }
 
 
