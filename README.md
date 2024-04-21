@@ -1,5 +1,7 @@
 # inforg2-teste-front-end
-
+## usuarios e senha
+usuario_teste_mario@infog2.com
+admin
 ## Project setup
 ```
 npm install
